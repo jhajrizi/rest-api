@@ -13,8 +13,14 @@ router.get('/:eventId', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
+  const event = {
+    title: req.body.title,
+    description: req.body.description,
+    tags: req.body.tags
+  }
   res.status(200).json({
-    message: 'Handling POST requests to /events'
+    message: 'Handling POST requests to /events',
+    createdEvent: event
   });
 });
 
