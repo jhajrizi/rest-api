@@ -1,0 +1,22 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "RESTful API for app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhajrizi/rest-api.git"
+  },
+  "author": "Jon Hajrizi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhajrizi/rest-api/issues"
+  },
+  "homepage": "https://github.com/jhajrizi/rest-api#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
