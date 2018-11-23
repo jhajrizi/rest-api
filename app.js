@@ -3,6 +3,12 @@ const helmet = require('helmet');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+mongoose.connect(
+  'mongodb://jon:PS&lp36338737@node-rest-events-shard-00-00-1fleo.mongodb.net:27017,node-rest-events-shard-00-01-1fleo.mongodb.net:27017,node-rest-events-shard-00-02-1fleo.mongodb.net:27017/test?ssl=true&replicaSet=node-rest-events-shard-0&authSource=admin&retryWrites=true',
+  { useNewUrlParser: true }
+);
 
 const eventRoutes = require('./api/routes/events');
 
